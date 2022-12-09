@@ -15,7 +15,7 @@ This project was created with HTML, CSS and a bit of JavaScript. The goal of the
 3. Click on the ytClone.html file to open the project in your browser
 
 # Usage
-Uploading YouTube Clone Preview ‐ Feito com o Clipchamp.mp4…
+https://user-images.githubusercontent.com/103337809/206768837-556da2cf-eb0e-4919-93b0-874477884060.mp4
 
 # Acknowledgments
 [![Watch the video](thumbnails/htmlncss.webp)](https://youtu.be/G3e-cpL7ofc)
