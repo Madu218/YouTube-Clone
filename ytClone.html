@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="icon" href="icons/yt-icone.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video-display.css">
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+    <header id="top-header">
+        <div class="left-section">
+            <div class="burguer-button"><img src="icons/bb.png" alt="burger-bar" class="burguer-bar"></div>
+            <img src="icons/yt-logo.png" alt="youtube-logo" class="yt-logo">
+        </div>
+
+        <div class="mid-section">
+            <div class="input-txt">
+                <input class="search" type="search" name="" placeholder="Pesquisar">
+            </div>
+            <button class="search-button">
+                <img src="icons/magnifying-glass.png" alt="">
+            </button>
+            <button class="voice-search-button">
+                <img src="icons/voice-search.png" alt="">
+            </button>
+        </div>
+
+        <div class="right-section">
+            <button class="create-button">
+                <img src="icons/create.png" alt="">
+            </button>
+            <button class="notification-button">
+                <img src="icons/notification.png" alt="">
+            </button>
+            <img src="icons/profile.png" alt="" class="profile-logo">
+        </div>
+    </header>
+    
+    <header id="bottom-header">
+        <div class="blur"></div>
+        <button class="control" onclick="scrollWin(-100, 0)">&#60;</button>
+        <div id="options">
+            <button>Mixes</button>
+            <button>Música</button>
+            <button>Ao&nbsp;vivo</button>
+            <button>Pop&nbsp;rock</button>
+            <button>R&nbsp;&&nbsp;B</button>
+            <button>HTML</button>
+            <button>Adele</button>
+            <button>Taylor&nbsp;Swift</button>
+            <button>Python</button>
+            <button>Backstreey&nbsp;Boys</button>
+            <button>Lista&nbsp;de&nbsp;reprodução</button>
+            <button>Mariah&nbsp;Carey</button>
+            <button>Enviados&nbsp;recentemente</button>
+            <button>Assistidos</button>
+            <button>Novidades&nbsp;para&nbsp;você</button>        
+        </div>
+        <button class="control" onclick="scrollWin(100, 0)">&#62;</button>
+        <div class="blur2"></div>
+    </header>
+
+    <script>
+        var slider = document.getElementById("options");
+        function scrollWin(x, y) {
+          slider.scrollBy(x, y);
+        }
+    </script>
+
+    <nav id="sidebar">
+        <div class="sidebar-buttons">
+            <img class="home-icon" src="icons/home.png" alt="">
+            <p>Início</p>
+        </div>
+        <div class="sidebar-buttons">
+            <img class="shorts-icon" src="icons/shorts.png" alt="">
+            <p>Shorts</p>
+        </div>
+        <div class="sidebar-buttons">
+            <img class="subscription-icon" src="icons/subscription.png" alt="">
+            <p>Inscrições</p>
+        </div>
+        <div class="sidebar-buttons">
+            <img class="library-icon" src="icons/library.png" alt="">
+            <p>Biblioteca</p>
+        </div>
+    </nav>
+
+    <main class="videos-display">
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/qod03PVTLqk">
+                    <img class="thumbnail" src="thumbnails/elton-john.webp" alt="thumbnail">
+                </a>
+                <div class="time">4:15</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div>
+                    <img class="channel-pic" src="channel-pic/elton-john.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <a href="https://youtu.be/qod03PVTLqk" class="video-title">Elthon John, dua Lipa - Cold Heart (PNAU Remix) (Official Video)</a>
+                    <div class="channel-name">Elton John &#9834;</div>
+                    <div class="video-stats">363 mi de visualizações &#8226; há 1 ano</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/XBu54nfzxAQ">
+                    <img class="thumbnail" src="thumbnails/dev.webp" alt="">
+                </a>
+                <div class="time">12:58</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/dev.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/XBu54nfzxAQ" class="video-title">Backend web development - a complete overview (2021)</a>
+                    <div class="channel-name">SuperSimpleDev</div>
+                    <div class="video-stats">638 mil visualizações &#8226; há 1 ano</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/7SFtYd1mWgs">
+                    <img class="thumbnail" src="thumbnails/xmas.webp" alt="">
+                </a>
+                <div class="time">4:38</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/xmas.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/7SFtYd1mWgs" class="video-title">Last Christmas | Emilia Clarke Sings "Last Christmas"</a>
+                    <div class="channel-name">Universal Pictures <div class="verified">&#10003;</div></div>
+                    <div class="video-stats">1,2 mi de visualizações &#8226; há 1 ano</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/Y1gYc1F-BeA">
+                    <img class="thumbnail" src="thumbnails/your-song.webp" alt="">
+                </a>
+                <div class="time">4:04</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/your-song.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/Y1gYc1F-BeA" class="video-title">Elthon John - Your Song (Lyrics)</a>
+                    <div class="channel-name">Young Pilgrim Music</div>
+                    <div class="video-stats">655 mil visualizações &#8226; há 1 ano</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <img class="thumbnail" src="thumbnails/mix.jpg" alt="">
+                <div class="overlay">
+                    <img class="overlay-img" src="icons/overlay.png" alt="">
+                </div>
+                <a href="https://www.youtube.com/watch?v=TNrDKUwbIP8&list=RDTNrDKUwbIP8">
+                    <div class="overlay-2">
+                        <img src="icons/triangle.png" alt="white triangle">
+                        <p>REPRODUZIR TODOS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="mix">
+                <div class="txt">
+                    <a href="https://www.youtube.com/watch?v=TNrDKUwbIP8&list=RDTNrDKUwbIP8" class="video-title">Mix de Baby K - Non dire una parola feat. Alvaro Soler (testo e Audio)</a>
+                    <div class="channel-name">Álvaro Soler, Baby K, Fred De Palma e outros</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/gPCCYMeXin0">
+                    <img class="thumbnail" src="thumbnails/look.webp" alt="">
+                </a>
+                <div class="time">2:55</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/look.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/gPCCYMeXin0" class="video-title">Meghan Trainor - Made You Look (Official Music Video)</a>
+                    <div class="channel-name">Meghan Trainor &#9834;</div>
+                    <div class="video-stats">21 mi de visualizações &#8226; há 3 semanas</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/G3e-cpL7ofc">
+                    <img class="thumbnail" src="thumbnails/htmlncss.webp" alt="">
+                </a>
+                <div class="time">6:31:34</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/dev.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/G3e-cpL7ofc" class="video-title">HTML & CSS Full Course - Beginner to Pro (20022)</a>
+                    <div class="channel-name">SuperSimpleDev</div>
+                    <div class="video-stats">2,3 mi de visualizações &#8226; há 9 meses</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="thumbnail-box">
+                <a href="https://youtu.be/1CPSkKyVXls">
+                    <img class="thumbnail" src="thumbnails/jason-mraz.webp" alt="thumbnail">
+                </a>
+                <div class="time">2:07:27</div>
+                <div class="overlay-3">Mantenha o cursor em cima do vídeo para ver uma prévia</div>
+            </div>
+            <div class="video-info">
+                <div><img class="channel-pic" src="channel-pic/jason-mraz.jpg" alt=""></div>
+                <div class="txt">
+                    <a href="https://youtu.be/1CPSkKyVXls" class="video-title">Jason Mraz Greatest Hits Full Album 2022 - Jason Mraz Best Songs</a>
+                    <div class="channel-name">PLAY MUSIC</div>
+                    <div class="video-stats">507 mil visualizações &#8226; há 1 ano</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

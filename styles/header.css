@@ -1,0 +1,285 @@
+#sidebar {
+    background-color: white;
+    display: flex;
+    position: fixed;
+    display: inline-block;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 74px;
+    z-index: 101;
+}
+
+#top-header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.sidebar-buttons p {
+    font-size: 10px;
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.sidebar-buttons:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+}
+
+.home-icon {
+    width: 17px;
+}
+
+.burguer-button {
+    margin: 24px;
+}
+
+.burguer-button:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+    padding: 9px;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+.burguer-bar {
+    width:18px;
+    cursor: pointer;
+}
+.yt-logo {
+    width: 90px;
+    cursor: pointer;
+}
+.search-button img {
+    width: 18px;
+    object-fit: cover;
+}
+.voice-search-button img {
+    width: 13px;
+    object-fit: cover;
+}
+.create-button img {
+    width: 21px;
+    cursor: pointer;
+}
+.notification-button img {
+    width: 16px;
+    cursor: pointer;
+}
+.subscription-icon {
+    width: 20px;
+}
+.library-icon {
+    width: 19px;
+}
+.profile-logo {
+    width: 31px;
+    height: 31px;
+    border-radius: 25px;
+    margin: 13px;
+    cursor: pointer;
+}
+.shorts-icon {
+    width: 17px;
+}
+
+.create-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-button:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 30px;
+    padding: 7px 12px;
+    margin: 8px 3px;
+}
+.create-button:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 30px;
+    padding: 12px 10px;
+    margin: 3px 5px;
+}
+
+.left-section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 159px;
+    margin-left: 6px;
+}
+.mid-section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 650px;
+    margin: 50px;
+    min-width: 0;
+}
+.right-section {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    width: 157px;
+}
+
+.right-section button {
+    border: none;
+    background: none;
+    padding: 15px;
+}
+
+.input-txt {
+    display: flex;
+    flex: 1;
+    max-width: 650px;
+    min-width: 0;
+}
+
+.input-txt input {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 20px;
+    border: solid 1px rgb(180, 180, 180);
+    box-shadow: inset 1px 1px 3px rgba(180, 180, 180, 0.459);
+    font-size: 15.5px;
+    min-width: 0;
+}
+
+.input-txt input:focus {
+    outline-style: none;
+    border-color: rgb(45, 80, 196);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.input-txt input::placeholder {
+    font-size: 16px;
+}
+
+.search-button {
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border: solid 1px rgba(180, 180, 180, 0.589);
+    border-left: none;
+    padding: 20px 23px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(245, 244, 244);
+    transition: all 0.15s;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: rgba(245, 244, 244, 0.589);
+    transition: all 0.15s;
+}
+
+.search-button:hover, .voice-search-button:hover {
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+#bottom-header {
+    background-color: white;
+    position: fixed;
+    top: 58px;
+    left: 70px;
+    right: 0;
+    height: 50px;
+    z-index: 101;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px;
+    font-size: 15px;
+}
+
+.blur, .blur2 {
+    width: 30px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    filter: blur(5px);
+    position: relative;
+}
+.blur {
+    right: -70px;
+}
+.blur2 {
+    right: 75px;
+}
+
+#bottom-header #options button{
+    border: none;
+    padding: 6px 15px;
+    border-radius: 6px;
+    background-color: rgba(186, 186, 186, 0.171);
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+#bottom-header #options button:hover, #bottom-header button:hover {
+    background-color: rgba(186, 186, 186, 0.315);
+}
+
+.control {
+    padding: 11px 15px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+}
+
+#options {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: 100%;
+    overflow: scroll;
+    margin: 50px 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .search-button, .voice-search-button {
+        border-radius: 30px;
+        padding: 10px 11px;
+        background-color: white;
+        border: none;
+    }
+    .input-txt {
+        opacity: 0;
+    }
+
+    .mid-section {
+        margin-right: 0;
+    }
+
+    .right-section {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,19 @@
+body{
+    height: 3000px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 97, 97);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(151, 150, 150);
+}
