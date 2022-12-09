@@ -1,6 +1,4 @@
 # Responsive YouTube inical page clone
-
-# General Information
 This project was created with HTML, CSS and a bit of JavaScript. The goal of the project was to learn, practice and display my knowledge over the technologies previously mentioned.
 
 # Technologies
